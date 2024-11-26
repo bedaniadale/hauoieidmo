@@ -68,9 +68,7 @@
                 @endif
                
                 
-                <button onclick = "click_filter(this)" class="w-[150px] h-[40px] flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-lg rolec">
-                    <span  class="text-sm text-gray-600">Roles</span>
-                </button> 
+               
 
 
 

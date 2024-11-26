@@ -599,13 +599,19 @@
             </div>
             <div class="box-row-item" style="width: 300px" class="mr-2"> 
                 <h3> Tenure</h3> 
-                <h1> {{$data->hiring->emp_tenure ?? 'n/a'}} @if($data->hiring->emp_tenure === 'NON-TENURED') - {{$data->hiring->non_tenured}} @endif </h1> 
-                
+                <h1> {{$data->hiring->emp_tenure ?? 'n/a'}}  </h1> 
+                @if($data->hiring)
+                        @if($data->hiring->emp_tenure === 'NON-TENURED') 
+                            - {{$data->hiring->non_tenured}} 
+                        @endif
+                    @endif
+
 
             </div>
             <div class="box-row-item" style="width: 300px"> 
                 <h3> Division</h3> 
-                <h1> {{$data->hiring->division ?? 'n/a'}} </h1> 
+                <h1> {{$data->hiring->division ?? 'n/a'}} </h1>
+                
             </div>
             
         </div>  
